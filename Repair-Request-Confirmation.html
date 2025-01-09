@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Design</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding-top: 38px;
+        padding-right: 39px;
+        padding-left: 39px;
+        padding-bottom: 38px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .header img {
+        max-width: 112px;
+      }
+
+      .content {
+        padding-top: 20px;
+      }
+
+      .content h2 {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      .content p {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+      }
+
+      .content .details {
+        margin: 20px 0;
+        padding: 0;
+      }
+
+      .details_req_list {
+        padding-left: 15px;
+        margin: 0;
+      }
+
+      .shiping__instruction {
+        padding-left: 15px;
+        margin: 0;
+      }
+
+      .details_req_list li {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+
+      .shiping__instruction li {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+      }
+
+      .shiping__instruction li p {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        word-wrap: break-word;
+      }
+
+      .text__please__download {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        padding-top: 20px;
+      }
+
+      .button-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .button-container a {
+        border-radius: 7px;
+        background: #2b2b2b;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .footer {
+        margin-top: 20px;
+      }
+
+      .mt-20 {
+        margin-top: 20px;
+      }
+
+      .footer p {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+
+      .footer__dec__text {
+        color: #2b2b2b;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+      }
+
+      .footer__link__email {
+        color: rgba(43, 43, 43, 0.5);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.14px;
+        text-align: center;
+        padding-top: 11px;
+      }
+
+      .footer__powered__text {
+        color: #253053;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <img src="your-logo-url.png" alt="Your Logo" />
+      </div>
+      <div class="content">
+        <p>Hi [Customer Name],</p>
+        <p>
+          Thank you for submitting your repair request! We're ready for the next
+          step. Please follow the instructions below to send your device to us.
+        </p>
+
+        <h2 class="mt-20">Repair Request Details</h2>
+        <div class="details">
+          <ul class="details_req_list">
+            <li>Device/Item: [Device/Item Name]</li>
+            <li>Issue Reported: [Brief Issue Description]</li>
+            <li>Request ID: [Request ID or Reference Number]</li>
+            <li>Submitted On: [Submission Date]</li>
+          </ul>
+        </div>
+
+        <h2>Shipping Instructions</h2>
+        <ol class="shiping__instruction mt-20">
+          <li>
+            Secure Your Device<br />
+            <p>
+              Ensure the device is properly packed to prevent any damage during
+              transit.
+            </p>
+          </li>
+          <li>
+            Attach the Consignment Note<br />
+            <p>
+              We've attached a consignment note for shipping. Print and attach
+              it to the outside of your package.
+            </p>
+          </li>
+          <li>
+            Drop-off or Schedule Pickup<br />
+            <p>
+              Drop off the package at your nearest [Courier/Partner Name]
+              location or schedule a pickup through their website.
+            </p>
+          </li>
+        </ol>
+
+        <p class="text__please__download">
+          Please download and print the attached consignment note.
+        </p>
+
+        <div class="button-container">
+          <a href="#">Consignment_Note.pdf</a>
+        </div>
+
+        <p>
+          If you have any questions, feel free to reply to this email or contact
+          us at [Support Email/Phone].<br />Thank you for choosing [Your
+          Company/Brand Name]!
+        </p>
+      </div>
+      <div class="footer">
+        <p>Best regards,</p>
+        <p class="mt-20">{companyname}</p>
+        <p>{loc_address}{loc_postcode} {loc_city}</p>
+        <p>{loc_city}</p>
+        <p>Tel.: {loc_phone}E-Mail: {loc_email}Web: {loc_web}</p>
+      </div>
+      <p class="footer__dec__text">
+        Privileged/Confidential Information may be contained in this message. If
+        you are not the addressee indicated in this message (or responsible for
+        delivery of the message to such person), you may not copy or deliver
+        this message to anyone. In such case, we ask you to destroy this
+        message, and notify us immediately. <br>
+         *** This is an automatically
+        generated email, please do not reply ***
+      </p>
+    </div>
+
+    <p class="footer__link__email">{{ companyweb }} • {{ company - name }}</p>
+    <p class="footer__powered__text">
+      Powered by <img src="" alt="logo rcms" />
+    </p>
+  </body>
+</html>
